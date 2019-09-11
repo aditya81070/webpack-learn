@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: palegoldenrod;
+}
+img {
+  max-width: 100%;
+  min-width: 200px;
+  border-radius: 10px;
+  width: 200px;
+  margin: 16px;
+  border: 1px solid black;
+  transition: box-shadow 0.5s ease;
+  /* box-shadow: 4px 5px 6px grey; */
+}
+
+img:hover {
+  box-shadow: 4px 4px 4px grey;
+}
+
+.markdown {
+  padding: 16px;
+  border: 1px solid burlywood;
+}
+.markdown ul {
+  list-style-position: inside;
+  padding: 10px;
+}
