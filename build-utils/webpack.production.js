@@ -14,13 +14,25 @@ module.exports = env => ({
         }
       },
       {
-        test: /\.css/,
+        test: /\.(sc|c)ss/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader
           },
-          'css-loader'
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                outputStyle: 'expanded'
+              }
+            }
+          }
         ]
+      },
+      {
+        test: /\.md/,
+        use: ['html-loader', 'markdown-loader']
       }
     ]
   },

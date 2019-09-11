@@ -21,12 +21,3 @@ img {
 img:hover {
   box-shadow: 4px 4px 4px grey;
 }
-
-.markdown {
-  padding: 16px;
-  border: 1px solid burlywood;
-}
-.markdown ul {
-  list-style-position: inside;
-  padding: 10px;
-}

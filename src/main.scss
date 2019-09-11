@@ -1,0 +1,34 @@
+@import 'variables';
+.markdown {
+  border: 1px solid black;
+  background-color: $background-color;
+  color: $primary-color;
+  padding: 16px;
+  margin: 16px;
+  ul {
+    display: block;
+    margin: 10px;
+    list-style-position: inside;
+    padding: 10px;
+    width: 200px;
+    li {
+      text-decoration: underline;
+    }
+  }
+  a {
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-size: 32px;
+    text-decoration: none;
+    border: 1px solid $primary-color;
+    padding: 10px;
+    background-color: brown;
+    color: $primary-color;
+    &:hover {
+      opacity: 0.8;
+      transform: scale(1.01);
+      box-shadow: 8px 5px 4px brown;
+    }
+  }
+}

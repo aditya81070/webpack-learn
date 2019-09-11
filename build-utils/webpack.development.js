@@ -34,8 +34,8 @@ module.exports = env => ({
         }
       },
       {
-        test: /\.css/,
-        use: ['style-loader', 'css-loader']
+        test: /\.(sc|c)ss/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
         test: /\.md/,
